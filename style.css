@@ -116,6 +116,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	margin-bottom: 20px;
 	
 }
 
@@ -132,6 +133,7 @@ article {
 	flex-wrap: nowrap;
 	text-align: center;
 	align-content: center;
+	align-items: center;
 	
 }
 
@@ -156,9 +158,18 @@ article img {
 	justify-content: space-between;
 }
 
+.contact-text {
+	margin-left: 50px;
+}
 
+.contact-links {
+	margin-right: 50px;
+}
 
-
+.contact-links a {
+	text-decoration: none;
+	padding: 15px;
+}
 
 
 
