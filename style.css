@@ -1,3 +1,164 @@
 * {
 	box-sizing: border-box;
 }
+
+
+body {
+  margin: 0;
+  background: #aabbfb;
+}
+
+.nav-drop {
+	display: none;
+}
+
+.nav-container {
+	display: flex;
+	background-color: hotpink;
+	justify-content: space-between;
+	height: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: black;
+	padding: 15px;
+	font-size: 18px;
+	font-family: Helvetica;
+	padding-top: 16px;
+	
+}
+
+.nav-cv {
+	border: 3px solid black;
+	border-radius: 8px;
+	margin-right: 10px;
+	width: 130px;
+	height: 40px;
+	padding-top: 10px;
+	margin-top: 5px;
+}
+
+.nav-cv a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	font-family: Helvetica;
+	margin-top: 11px;
+}
+
+.nav-cv:hover {
+	border: 3px solid red;
+}
+
+.nav-cv a:hover {
+	color: red;
+}
+
+.about-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	height: 600px;
+	background-image: url("energy.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.about-writing {
+	display: flex;
+	width: 50%;
+	background-color: blue;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.gallery {
+  
+  display: grid;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  gap: 15px;
+  width: auto;
+  aspect-ratio: 1.2;
+  grid-template-columns: repeat(3,auto);
+}
+
+.gallery > img {
+  width: 33%;
+  height: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: .35s linear;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.port-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	
+}
+
+.article-container {
+	display: flex;
+	justify-content: center;
+}
+
+article {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	text-align: center;
+	align-content: center;
+	
+}
+
+article:nth-child(1) {
+	margin-left: 20px;
+}
+
+
+article img {
+	width: 50%;
+	height: auto;
+}
+
+.port-head {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
