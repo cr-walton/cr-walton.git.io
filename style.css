@@ -17,13 +17,14 @@ body {
 .dropbtn {
 	background-color: #aae4fb;
 	color:  black;
-	padding: 6.5px;
+	padding: 5.5px;
 	font-size: 1.8rem;
 	border: 0.5px solid;
 	padding-right: 20px;
 	padding-left: 20px;
-	padding-top: 8px;
+	padding-top: 6.5px;
 	margin-bottom: 5px;
+	margin-top: 1px;
 	border-radius: 8px;
 	margin-left: 5px;
 }
@@ -205,7 +206,8 @@ h3 {
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
+	align-items: center;	
 }
 
 .port-head {
@@ -214,6 +216,7 @@ h3 {
 	text-align: center;
 	align-items: end;
 	background-color: #6181f8;
+	width: 100%;
 }
 
 .port-head h3 {
@@ -225,11 +228,14 @@ h3 {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	max-width: 1200px;
 }
 
 article {
 	width: 30%;
 	max-width: 350px;
+	min-width: 350px;
+	height: 450px;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
@@ -240,13 +246,14 @@ article {
 	margin-top: 20px;
 	margin: 20px;
 	overflow: hidden;
-	height: 350px;
 	background-color: #edeef2;
 	box-shadow: 0 5px 5px -5px #000500;	
 }
 
-article:nth-child(1) {
-	margin-left: 20px;
+.web-link {
+	text-decoration: none;
+	margin-top: 10px;
+	font-size: 1.5rem;
 }
 
 article img {
@@ -254,7 +261,7 @@ article img {
 	height: auto;
 	border: 0.5px solid black;
 	margin-bottom: 20px;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 .project-link {
@@ -335,6 +342,7 @@ article img {
 	.gallery {
 		display: none;
 	}
+	
 	
 	.about-writing {
 		width: 80%;
