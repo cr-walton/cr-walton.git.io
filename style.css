@@ -304,9 +304,12 @@ article img {
 	.about-container{ 
 		flex-direction: column;
 		align-items: center;
-		height: 800px;
+		height: 1200px;
 	}
 	
+	.about-writing {
+		width: 80%;
+	}
 	.gallery {
 		width: 75%;
 	}
@@ -334,7 +337,7 @@ article img {
 	}
 	
 	.about-writing {
-		width: 75%;
+		width: 80%;
 	}
 	
 	.article-container {
