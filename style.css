@@ -61,7 +61,7 @@ body {
 
 .nav-container {
 	display: flex;
-	background-color: #aabbfb;
+	background-color: #6181f8;
 	justify-content: space-between;
 	height: 50px;
 	text-align: center;
@@ -106,15 +106,10 @@ body {
 	font-size: 1.1rem;
 	font-family: Helvetica;
 	margin-top: 10px;
-	transition: transform .2s;
 }
 
 .nav-cv a:hover {
-	transform: scale(1.2);
-}
-
-.nav-cv a:hover {
-	color: #6181f8;
+	color: #ffffff;
 }
 
 .about-container {
@@ -122,18 +117,27 @@ body {
 	justify-content: center;
 	flex-direction: row;
 	height: 600px;
-	background-image: url("energy.png");
-	background-repeat: no-repeat;
-	background-position: center top;
 }
 
 .about-writing {
 	display: flex;
 	width: 50%;
-	background-color: blue;
 	text-align: center;
 	justify-content: center;
 	flex-direction: column;
+	align-items: center;
+}
+.about-writing h3 {
+	font-family: "Montserrat";
+	font-size: 2rem;
+}
+
+.about-writing p {
+	font-family: "Montserrat";
+}
+
+.about-align {
+	width: 80%;
 }
 
 .gallery {
@@ -169,8 +173,14 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	margin-bottom: 20px;
-	
+	margin-bottom: 20px;	
+}
+
+.port-head {
+	height: 400px;
+	text-align: center;
+	align-items: center;
+	background-color: #6181f8;
 }
 
 .article-container {
@@ -187,6 +197,7 @@ article {
 	text-align: center;
 	align-content: center;
 	align-items: center;
+	margin-top: 20px;
 	
 }
 
@@ -209,6 +220,7 @@ article img {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-color: #fbeaaa;
 }
 
 .contact-text {
@@ -217,6 +229,7 @@ article img {
 
 .contact-links {
 	margin-right: 50px;
+	margin-top: 12px;
 }
 
 .contact-links a {
