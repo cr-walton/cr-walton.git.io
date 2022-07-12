@@ -150,6 +150,11 @@ h3 {
 	font-size: 2rem;
 }
 
+h5 {
+	font-family: "Montserrat";
+	font-size: 1.0rem;
+}
+
 .about-container {
 	display: flex;
 	justify-content: center;
@@ -340,9 +345,17 @@ article img {
 	}
 	
 	.gallery {
+		grid-template-columns: repeat(1,auto);
+		width: 80%;
+	}
+	
+	.gallery img:nth-child(1) {		
 		display: none;
 	}
 	
+	.gallery img:nth-child(4) {		
+		display: none;
+	}
 	
 	.about-writing {
 		width: 80%;
