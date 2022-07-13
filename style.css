@@ -362,6 +362,14 @@ article img:hover {
 	article {
 		margin-left: 0px;
 	}
+	
+	.contact-text {
+		width: 65%;
+	}
+	
+	.contact-links {
+		margin-right: 20px;
+	}
 }
 
 @media screen and (max-width:768px){
