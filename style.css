@@ -137,7 +137,7 @@ header {
 h1 {
 	font-family: "Josefin Sans";
 	font-size: 4rem;
-	color: #3b2a8b;
+	color: #000000;
 	margin-top: 50px;
 }
 
@@ -176,7 +176,7 @@ h5 {
 }
 
 .about-align {
-	width: 80%;
+	margin-right: 30px;
 }
 
 .gallery { 
@@ -230,10 +230,11 @@ h5 {
 }
 
 .article-container {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+	width: 80%;
 	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 1200px;
+	grid-column-gap: 8%;
 }
 
 article {
@@ -323,6 +324,13 @@ article img:hover {
 	padding-right: 15px;
 }
 
+@media screen and (max-width:1500px){
+	.article-container{
+		grid-column-gap: 3%;
+	}
+}
+
+
 @media screen and (max-width:1024px){
 	.about-container{ 
 		flex-direction: column;
@@ -346,9 +354,21 @@ article img:hover {
 		width: 75%;
 		height: auto;
 	}
+	
+	.article-container {
+		grid-template-columns: repeat(2,auto);
+	}
+	
+	article {
+		margin-left: 0px;
+	}
 }
 
 @media screen and (max-width:768px){
+	body {
+		font-size: 18px;
+	}
+	
 	.nav-drop {
 		display: block;	
 	}
@@ -390,17 +410,35 @@ article img:hover {
 		width: 80%;
 	}
 	
+	.about-align {
+		margin-right: 0px;
+	}
+	
 	.article-container {
-		flex-wrap: wrap;
+		grid-template-columns: repeat(1,auto);
 	}
 	
 	article {
 		width: 90%;
-		margin-bottom: 15px;
+		margin: 15px;
 	}
 	
 	article:nth-child(1) {
 		margin-left: 20;
 	}
 	
+	.port-head p {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	.contact-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.contact-links {
+		margin-right: 0px;
+		margin-top: 0px;
+	}
 }
