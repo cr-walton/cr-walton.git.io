@@ -15,7 +15,7 @@ body {
 }
 
 .dropbtn {
-	background-color: #aae4fb;
+	background-color: #fbeaaa;
 	color:  black;
 	padding: 5.5px;
 	font-size: 1.8rem;
@@ -33,7 +33,7 @@ body {
 	display: none;
 	position: absolute;
 	background-color: #aae4fb;
-	width: 165px;
+	width: 108px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 2;
 	margin-top: -5px;
@@ -46,6 +46,11 @@ body {
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
+	border-bottom: 0.5px solid #000000;
+}
+
+.dropdown-content a:nth-child(4){
+	border: none;
 }
 
 .dropdown-content a:hover {
@@ -250,7 +255,7 @@ article {
 	align-content: center;
 	align-items: center;
 	margin-top: 20px;
-	margin: 20px;
+	margin-bottom: 20px;
 	overflow: hidden;
 	background-color: #edeef2;
 	box-shadow: 0 5px 5px -5px #000500;
@@ -364,11 +369,19 @@ article img:hover {
 	}
 	
 	.contact-text {
-		width: 65%;
+		display: none;
+	}
+	.contact-container {
+		justify-content: center;
 	}
 	
 	.contact-links {
-		margin-right: 20px;
+		margin-right: 0px;
+	}
+
+	.contact-links a:nth-child(2) {
+		padding-left: 15px;
+		padding-right: 30px;
 	}
 }
 
@@ -436,8 +449,8 @@ article img:hover {
 	}
 	
 	.port-head p {
-		padding-left: 5px;
-		padding-right: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	
 	.contact-container {
