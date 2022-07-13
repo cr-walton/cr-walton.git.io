@@ -137,7 +137,7 @@ header {
 h1 {
 	font-family: "Josefin Sans";
 	font-size: 4rem;
-	color: #3b2a8b;
+	color: #000000;
 	margin-top: 50px;
 }
 
@@ -148,6 +148,11 @@ p {
 h3 {
 	font-family: "Montserrat";
 	font-size: 2rem;
+}
+
+h5 {
+	font-family: "Montserrat";
+	font-size: 1.0rem;
 }
 
 .about-container {
@@ -171,7 +176,7 @@ h3 {
 }
 
 .about-align {
-	width: 80%;
+	margin-right: 30px;
 }
 
 .gallery { 
@@ -225,10 +230,11 @@ h3 {
 }
 
 .article-container {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+	width: 80%;
 	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 1200px;
+	grid-column-gap: 8%;
 }
 
 article {
@@ -247,7 +253,8 @@ article {
 	margin: 20px;
 	overflow: hidden;
 	background-color: #edeef2;
-	box-shadow: 0 5px 5px -5px #000500;	
+	box-shadow: 0 5px 5px -5px #000500;
+	border-radius: 5px;	
 }
 
 .web-link {
@@ -259,9 +266,17 @@ article {
 article img {
 	width: 90%;
 	height: auto;
+	object-fit: cover;
 	border: 0.5px solid black;
 	margin-bottom: 20px;
 	margin-top: 10px;
+	filter: grayscale(50%);
+	transition: transform 0.2s;
+}
+
+article img:hover {
+	filter: grayscale(0%);
+	transform: scale(1.05);
 }
 
 .project-link {
@@ -298,31 +313,70 @@ article img {
 }
 
 .contact-links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	margin-right: 50px;
 	margin-top: 12px;
 }
 
 .contact-links a {
-	text-decoration: none;
 	padding-right: 15px;
 }
+
+@media screen and (max-width:1500px){
+	.article-container{
+		grid-column-gap: 3%;
+	}
+}
+
 
 @media screen and (max-width:1024px){
 	.about-container{ 
 		flex-direction: column;
 		align-items: center;
-		height: 1200px;
+		height: auto;
+	}
+	
+	.gallery img:nth-child(2){
+		min-height: 80%;
+	}
+	
+	.gallery img:nth-child(1){
+		min-height: 80%;
 	}
 	
 	.about-writing {
 		width: 80%;
 	}
+	
 	.gallery {
 		width: 75%;
+		height: auto;
+	}
+	
+	.article-container {
+		grid-template-columns: repeat(2,auto);
+	}
+	
+	article {
+		margin-left: 0px;
+	}
+	
+	.contact-text {
+		width: 65%;
+	}
+	
+	.contact-links {
+		margin-right: 20px;
 	}
 }
 
 @media screen and (max-width:768px){
+	body {
+		font-size: 18px;
+	}
+	
 	.nav-drop {
 		display: block;	
 	}
@@ -340,25 +394,59 @@ article img {
 	}
 	
 	.gallery {
+		grid-template-columns: repeat(1,auto);
+		width: 80%;
+	}
+	
+	.gallery img:nth-child(1) {		
 		display: none;
 	}
 	
+	.gallery img:nth-child(2) {
+		height: 200px;
+	}	
+	
+	.gallery img:nth-child(3) {
+		height: 200px;
+	}	
+	
+	.gallery img:nth-child(4) {		
+		display: none;
+	}
 	
 	.about-writing {
 		width: 80%;
 	}
 	
+	.about-align {
+		margin-right: 0px;
+	}
+	
 	.article-container {
-		flex-wrap: wrap;
+		grid-template-columns: repeat(1,auto);
 	}
 	
 	article {
 		width: 90%;
-		margin-bottom: 15px;
+		margin: 15px;
 	}
 	
 	article:nth-child(1) {
 		margin-left: 20;
 	}
 	
+	.port-head p {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	.contact-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.contact-links {
+		margin-right: 0px;
+		margin-top: 0px;
+	}
 }
