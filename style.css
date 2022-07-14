@@ -6,7 +6,7 @@
 body {
   margin: 0;
   background: #aabbfb;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
 }
 
@@ -17,16 +17,12 @@ body {
 .dropbtn {
 	background-color: #fbeaaa;
 	color:  black;
-	padding: 5.5px;
+	padding: 6.5px 20px 5.5px 20px;
 	font-size: 1.8rem;
 	border: 0.5px solid;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-top: 6.5px;
-	margin-bottom: 5px;
-	margin-top: 1px;
+	margin: 1px 0 5px 5px;
 	border-radius: 8px;
-	margin-left: 5px;
+
 }
 
 .dropdown-content {
@@ -65,12 +61,11 @@ body {
 	background-color: #c2aafb;
 }
 
-.nav-container {
+nav {
 	display: flex;
 	background-color: #fbeaaa;
 	justify-content: space-between;
 	height: 50px;
-	width: 100%;
 }
 
 .nav-links {
@@ -80,7 +75,7 @@ body {
 
 .nav-links a {
 	text-decoration: none;
-	color: black;
+	color: #000000;
 	padding: 15px;
 	font-size: 18px;
 	font-family: Helvetica;
@@ -94,11 +89,11 @@ body {
 
 #cv {
 	text-decoration: none;
-	color: black;
+	color: #000000;
 	font-size: 1.1rem;
 	font-family: Helvetica;
 	height: 70%;
-	border: 3px solid black;
+	border: 3px solid #000000;
 	border-radius: 8px;
 	margin-right: 10px;
 	margin-top: 5px;
@@ -113,7 +108,6 @@ body {
 
 header {
 	display: flex;
-	width: 100%;
 	height: 800px;
 	background-image: url("coffee.jpg");
 	background-repeat: no-repeat;
@@ -160,6 +154,7 @@ h5 {
 	flex-direction: column;
 	align-items: center;
 }
+
 .about-writing h3 {
 	font-family: "Montserrat";
 	font-size: 2rem;
@@ -175,29 +170,29 @@ h5 {
 }
 
 .gallery { 
-  display: grid;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  padding: 10px;
-  gap: 15px;
-  aspect-ratio: 1.2;
-  grid-template-columns: repeat(2,auto);
+  	display: grid; 
+	margin-top: 15px;
+ 	margin-bottom: 20px;
+ 	padding: 10px;
+ 	gap: 15px;
+ 	aspect-ratio: 1.2;
+  	grid-template-columns: repeat(2,auto);
 }
 
 .gallery > img {
-  width: 33%;
-  height: 50%;
-  min-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  cursor: pointer;
-  filter: grayscale(80%);
-  transition: .35s linear;
+  	width: 33%;
+ 	height: 50%;
+  	min-height: 100%;
+  	min-width: 100%;
+  	object-fit: cover;
+  	cursor: pointer;
+  	filter: grayscale(80%);
+  	transition: .35s linear;
 }
 
 .gallery img:hover{
-  filter: grayscale(0);
-  transform: scale(1.1);
+	filter: grayscale(0);
+	transform: scale(1.1);
 }
 
 .port-container {
@@ -208,10 +203,7 @@ h5 {
 }
 
 .port-head {
-	display: inline-block;
-	height: 400px;
 	text-align: center;
-	align-items: end;
 	background-color: #6181f8;
 	width: 100%;
 }
@@ -390,11 +382,11 @@ footer {
 		display: none;
 	}
 
-	.nav-cv {
+	#cv {
 		display: none;
 	}
 	
-	.nav-container {
+	nav {
 		justify-content: flex-start;
 	}
 	
