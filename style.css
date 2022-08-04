@@ -263,6 +263,9 @@ article img:hover {
 	transform: scale(1.05);
 }
 
+article p {
+	margin: 0 5px 0 5px;
+}
 .project-link {
 	display: flex;
 }
