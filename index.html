@@ -16,7 +16,7 @@
 			<a href="#portfolio">Portfolio</a>
 			<a href="#contact-me">Contact</a>
 		</div>
-		<a href="crwaltoncv.docx" class="btn btn-secondary" id="cv">Download CV</a>
+		<a href="CWaltonCV.pdf" class="btn btn-secondary" id="cv">Download CV</a>
 		<div class="nav-drop">
 			<button class="dropbtn btn btn-secondary ms-2 mt-2 py-1">Menu</button>
 			<div class="dropdown-content">
@@ -28,14 +28,13 @@
 		</div>
 	</nav>
 	<header>
-		<h1>Chris Walton</h1>
+		<h1 class="wavy">Chris Walton</h1>
 	</header>
 	<section class="about-container" id="about-me">
 		<div class="about-writing">
 			<div class="about-align">
 				<h3>ABOUT ME</h3>
-				<p>I am a software developer based in Cardiff, with an interest in backend development. So far I have
-					relished the opportunity to work with databases and PHP. I will graduate from iO Academy in October
+				<p>I am a software developer based in Cardiff, with an interest in full-stack development. I relish the oppotunity to learn and develop my skills and hope to continue this trajectory with my next role. I will graduate from iO Academy in October
 					2022.</p>
 				<p>Prior to my training, I was completing a biology degree and have a deep interest in conservation and
 					the environment. My strengths include communication skills and problem-solving.</p>
@@ -45,9 +44,7 @@
 			</div>
 		</div>
 		<div class="gallery">
-			<div class="img_gallery1">
-				<span role="image" aria-label="starter from Sky Garden"></span>
-			</div>
+			<div class="img_gallery1"><span role="image" aria-label="starter from Sky Garden"></span></div>
 			<div class="img_gallery2"><span role="image" aria-label="dessert from Sky Garden"></span></div>
 			<div class="img_gallery3"><span role="image" aria-label="two 20 sided dice"></span></div>
 			<div class="img_gallery4"><span role="image" aria-label="rugby player taking a kick"></span></div>
@@ -62,24 +59,36 @@
 		</div>
 		<div class="article-container">
 			<article>
+				<img src="AcademyPortal.png" alt="academy portal" />
+				<div class="container">
+					<h5 class="project-title fw-bold">Academy Portal</h5>
+					<p>Working on a legacy codebase using Slim framework, MVC and integrated JavaScript. We added new features and functionality to the portal, unit tested and used continuous integration.</p>
+					<h5 class="text-muted my-1">Sept 2022, iO Academy</h5>
+				</div>
+				<div class="project-link container mt-1">
+					<a class="btn btn-outline-secondary btn-sm" href="#" target="_blank">Live Project</a>
+					<a class="btn btn-outline-secondary btn-sm" href="https://github.com/iO-Academy/AcademyPortal" target="_blank">GitHub Project</a>
+				</div>
+			</article>
+
+			<article>
 				<img src="dunkinBisquids.png" alt="Biscuit Comparison Website" />
 				<div class="container">
 					<h5 class="project-title fw-bold">Dunkin Bisquids</h5>
-					<p>A project focusing on Object Orientated Programming and utilising the SOLID principles. We used
-						MySQL database and PHP to disply the biscuits and their popularity.</p>
+					<p>A project focusing on OOP and utilising the SOLID principles. We used the hydrator entity pattern with composer (PSR-4) to manage dependencies.</p>
 					<h5 class="text-muted my-1">September 2022, iO Academy</h5>
 				</div>
 				<div class="project-link container mt-1">
-					<a class="btn btn-outline-secondary btn-sm" href="#">Live Project</a>
+					<a class="btn btn-outline-secondary btn-sm" href="https://dev.io-academy.uk/projects/2022-july/dunkin-bisquids/index.php" target="_blank">Live Project</a>
 					<a class="btn btn-outline-secondary btn-sm" target="_blank"
-						href="https://github.com/iO-Academy/2022-jul-DunkinBisquids" target="_blank">GitHub Project</a>
+						href="https://github.com/iO-Academy/2022-jul-DunkinBisquids" >GitHub Project</a>
 				</div>
 			</article>
 			<article>
 				<img src="emailClient.png" alt="email client project" />
 				<div class="container">
 					<h5 class="project-title fw-bold">SeaMail</h5>
-					<p>React based project of an email client API. We worked with a component tree, Bootstrap and SASS.
+					<p>An email client API, where we incorporated previous experience in JS into a React based app. We worked with a component tree, Bootstrap and SASS.
 						We
 						used git as version control and was an agile project. </p>
 					<h5 class="text-muted my-1">September 2022, iO Academy</h5>
@@ -111,7 +120,7 @@
 				<img src="Quotlefish.png" alt="Quote Game" />
 				<div class="container">
 					<h5 class="project-title fw-bold">Quotlefish Game</h5>
-					<p>A JavaScript based game we worked as a team to create, working in an agile manner.</p>
+					<p>A JavaScript based game we worked as a team to create, working in an agile manner. Utilising event handlers, JSON data and modals.</p>
 					<h5 class="text-muted my-1">July 2022, iO Academy</h5>
 				</div>
 				<div class="project-link container mt-1">
@@ -119,19 +128,6 @@
 						href="https://dev.io-academy.uk/projects/2022-july/quotlefish/" target="_blank">Live Project</a>
 					<a class="btn btn-outline-secondary btn-sm"
 						href="https://github.com/iO-Academy/2022-jul-guess-the-film" target="_blank">GitHub Project</a>
-				</div>
-			</article>
-
-			<article>
-				<img src="website.png" alt="website image" />
-				<div class="container">
-					<h5 class="project-title fw-bold">Project</h5>
-					<p>Information about the about project</p>
-					<h5 class="text-muted my-1">July 2022, iO Academy</h5>
-				</div>
-				<div class="project-link container mt-1">
-					<a class="btn btn-outline-secondary btn-sm" href="#" target="_blank">Live Project</a>
-					<a class="btn btn-outline-secondary btn-sm" href="#" target="_blank">GitHub Project</a>
 				</div>
 			</article>
 
@@ -160,7 +156,7 @@
 						d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765l-6-3.2ZM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM0 13.373l5.693-3.163L0 6.873v6.5Z" />
 				</svg>
 			</a>
-			<a href="https://www.linkedin.com/in/chris-walton-42105624b/" class="pt-2">
+			<a href="https://www.linkedin.com/in/chris-walton-42105624b/" title="linkedIn" class="pt-2">
 				<svg width="45" height="45" viewBox="0 0 512 512">
 					<path
 						d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />

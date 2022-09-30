@@ -105,6 +105,16 @@ header {
   justify-content: center;
 }
 
+.wavy {
+  animation: flip 8s infinite;
+}
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
 h1 {
   font-family: "Josefin Sans";
   font-size: 4rem;
